@@ -18,13 +18,19 @@ export class PaginationDemoPage {
   }
 
 
+  //打开新页面
   details(url){
     this.nativeService.openUrlByBrowser(url);
   }
 
 
+  //分页
   doSearch(pageNum) {
     console.log(pageNum);
   }
 
+  pagination(){
+    console.log("222222");
+   // this.navCtrl.push(PaginationDemoPage);
+  }
 }

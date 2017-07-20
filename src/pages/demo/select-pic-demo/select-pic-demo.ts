@@ -55,4 +55,8 @@ export class SelectPicDemoPage {
     });
   }
 
+  fun1(){
+    
+  }
+
 }

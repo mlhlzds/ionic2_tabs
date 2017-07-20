@@ -1,22 +1,46 @@
-<!--
-  Generated template for the PaginationDemo page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>pagination-demo</ion-title>
-  </ion-navbar>
-
+    <ion-navbar>
+        <ion-title>详情</ion-title>
+    </ion-navbar>
 </ion-header>
+<ion-content padding class="list-avatar-page">
 
+    <ion-list>
+        <ion-item (click)="pagination()">
+            <ion-thumbnail item-left>                 
+                <img src="assets/img/avatar-ts-woody.jpg">
+            </ion-thumbnail>
+            <h1>洗衣机</h1>
+            <p>This town ain't big enough for the two of us!</p>
+            <ion-note item-right>2016-7-18</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-left>
+                <img src="assets/img/avatar-ts-buzz.jpg">
+            </ion-thumbnail>
+            <h1>电视机</h1>
+            <p>My eyeballs could have been sucked from their sockets!</p>
+            <ion-note item-right>2016-7-17</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-left>
+                <img src="assets/img/avatar-ts-jessie.jpg">
+            </ion-thumbnail>
+            <h1>超级洗衣机</h1>
+            <p>Well aren't you just the sweetest space toy I ever did meet!</p>
+            <ion-note item-right>2016-7-16</ion-note>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-left>
+                <img src="assets/img/avatar-ts-potatohead.jpg">
+            </ion-thumbnail>
+            <h1>冰箱</h1>
+            <p>You're not turning me into a Mashed Potato.</p>
+            <ion-note item-right>2016-7-15</ion-note>
+        </ion-item>
+            
 
-<ion-content padding>
-  <page-pagination [total]="16" (pageNumChange)="doSearch($event)"></page-pagination>
-  <page-pagination [total]="22" (pageNumChange)="doSearch($event)" pageSize="10" color="dark"></page-pagination>
-  <div padding>
-    <button ion-button block (click)="details('http://www.jianshu.com/p/8cf299555370')">查看详情</button>
-  </div>
+           
+    </ion-list>
 </ion-content>
+
