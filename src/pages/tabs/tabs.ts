@@ -6,6 +6,7 @@ import {Tabs} from "ionic-angular";
 import {TestPage} from "../test/test";
 import {DemoPage} from "../demo/demo";
 
+
 @Component({
   templateUrl: 'tabs.html'
 })
@@ -14,7 +15,7 @@ export class TabsPage {
   testRoot: any = TestPage;
   demoRoot: any = DemoPage;
   homeRoot: any = HomePage;
-  mineRoot: any = MinePage;
+  mineRoot: any = MinePage;   
 
   constructor() {
 
