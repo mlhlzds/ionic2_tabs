@@ -1,13 +1,17 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>select-pic-demo</ion-title>
+    <ion-title>详情</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <div padding-vertical>
-    demo1:没有添加和删除权限:[allowAdd]="false" [allowDelete]="false"
     <page-select-pic [(fileObjList)]="fileObjList" [allowAdd]="false" [allowDelete]="false"></page-select-pic>
+    <ul>
+    	<li>给您的客厅加了两个开关</li>
+    	<li>我是李硕我要请客</li>
+    	<li>你好啊我要把你抱起来</li>
+    </ul>
   </div>
  
   <button ion-button block (click)="fun1()">我要反馈</button>

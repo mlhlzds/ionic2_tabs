@@ -37,11 +37,11 @@ export class MyApp {
           this.helper.setTags();
           this.helper.setAlias(userInfo.id);
         } else {
-          let modal = this.modalCtrl.create(LoginPage);
-          modal.present();
-          modal.onDidDismiss(data => {
-            data && console.log(data);
-          });
+         // let modal = this.modalCtrl.create(LoginPage);
+         // modal.present();
+          //modal.onDidDismiss(data => {
+         //   data && console.log(data);
+         // });
         }
       });
       this.nativeService.statusBarStyleDefault();
