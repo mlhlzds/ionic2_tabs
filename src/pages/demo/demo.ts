@@ -1,13 +1,14 @@
 import {Component} from '@angular/core';
 
 import {NavController} from 'ionic-angular';
-import {PaginationDemoPage} from "./pagination-demo/pagination-demo";
 
+import {Test4DemoPage} from "./test4-demo/test4-demo";
 import {CustomIconDemoPage} from "./custom-icon-demo/custom-icon-demo";
 import {ChartjsDemoPage} from "./chartjs-demo/chartjs-demo";
 import {SelectPicDemoPage} from "./select-pic-demo/select-pic-demo";
 import {CustomPipeDemo} from "./custom-pipe-demo/custom-pipe-demo";
 import {TransitionDemoPage} from "./transition-demo/transition-demo";
+
 
 @Component({
   selector: 'page-contact',
@@ -20,7 +21,7 @@ export class DemoPage {
   }
 
   pagination() {
-    this.navCtrl.push(PaginationDemoPage);
+    this.navCtrl.push(Test4DemoPage);
   }
 
   customIcon() {
