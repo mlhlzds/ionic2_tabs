@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我要投诉</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item>
+        <ion-textarea style="overflow-y:hidden; height:50px;"
+                onpropertychange="this.style.height=this.scrollHeight + 'px'"
+                oninput="this.style.height=this.scrollHeight + 'px'" [(ngModel)]="description"
+                placeholder="请填写问题描述">
+        </ion-textarea>
+        </ion-item>
+        <ion-item>
+            <div padding-vertical>
+              <page-select-pic [max]="6" [(fileObjList)]="fileObjList"></page-select-pic>
+            </div>
+            <hr/>
+
+             <ion-grid>
+              <ion-row>
+                <ion-col text-right >
+                  <p>投诉时间：2017年7月22日</p>
+                </ion-col>
+              </ion-row>
+            </ion-grid>  
+        </ion-item>
+        <button ion-button block (click)="uploadMultiByBase64()">提交</button>
+
+       <h4 text-center>服务热线：40066668888</h4>
+    </ion-list>
+
+  
+
+
+</ion-content>

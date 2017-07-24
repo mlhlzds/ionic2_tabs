@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 
 import {NavController} from 'ionic-angular';
 import {PaginationDemoPage} from "./pagination-demo/pagination-demo";
+
 import {CustomIconDemoPage} from "./custom-icon-demo/custom-icon-demo";
 import {ChartjsDemoPage} from "./chartjs-demo/chartjs-demo";
 import {SelectPicDemoPage} from "./select-pic-demo/select-pic-demo";

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {NativeService} from "../../../providers/NativeService";
+import {Test1DemoPage} from "../test1-demo/test1-demo";
 
 /*
   Generated class for the CustomIconDemo page.
@@ -20,5 +21,9 @@ export class CustomIconDemoPage {
   details(url){
     this.nativeService.openUrlByBrowser(url);
   }
+  //Test1DemoPage
 
+  toPage1(){
+  	this.navCtrl.push(Test1DemoPage);
+  }
 }

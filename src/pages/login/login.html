@@ -10,6 +10,10 @@
 <ion-content>
   <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
     <ion-list>
+       <div align="center">
+          <img src="assets/img/logo.jpg">
+       </div>
+
       <ion-item>
         <ion-label color="primary">用户名</ion-label>
         <ion-input type="text" formControlName="username" clearInput></ion-input>
@@ -29,12 +33,12 @@
   </form>
   <ion-grid>
     <ion-row>
-      <ion-col text-center (click)="findPassword()">
-        <button ion-button small clear color="primary">找回密码</button>
+
+      <ion-col text-center >
+        <p>悦家智能家居体验馆</p>
       </ion-col>
-      <ion-col text-center (click)="toRegister()">
-        <button ion-button small clear color="primary">注　册</button>
-      </ion-col>
+
+
     </ion-row>
   </ion-grid>
 </ion-content>
